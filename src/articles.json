@@ -1,0 +1,116 @@
+[
+    {
+      "topic": "The Life and Reign of Cleopatra",
+      "article": "Cleopatra, the last active ruler of the Ptolemaic Kingdom of Egypt, was known for her relationships with Julius Caesar and Mark Antony. Her reign was characterized by political intrigue and alliances.",
+      "id":"article-1",
+      "subject": "History",
+      "readTime" : "15 minutes",
+      "categoryID": 0
+    },
+    {
+      "topic": "The Fall of the Roman Empire",
+      "article": "The decline of the Roman Empire was a complex process marked by economic instability, military challenges, and internal struggles for power. The fall of Rome had a profound impact on Western civilization.",
+      "id":"article-2",
+      "subject": "literature",
+      "readTime" : "15 minutes",
+      "categoryID": 1
+    },
+    {
+      "topic": "The Renaissance and Its Impact",
+      "article": "The Renaissance was a period of cultural, artistic, and intellectual rebirth in Europe. It brought about significant changes in art, literature, and science, paving the way for modern thought.",
+      "id":"article-3",
+      "subject": "philosophy",
+      "readTime" : "15 minutes",
+      "categoryID": 2
+    },
+    {
+      "topic": "The Mongol Empire under Genghis Khan",
+      "article": "Genghis Khan's empire was one of the largest contiguous land empires in history. His military campaigns and administrative innovations left a lasting legacy on Eurasian history.",
+      "id":"article-4",
+      "subject": "psychology",
+      "readTime" : "15 minutes",
+      "categoryID": 3
+    },
+    {
+      "topic": "The French Revolution and Its Aftermath",
+      "article": "The French Revolution was a period of radical social and political upheaval in France. This transformative period led to the rise of Napoleon Bonaparte and shaped European politics for decades.",
+      "id":"article-5",
+      "subject": "art",
+      "readTime" : "15 minutes",
+      "categoryID": 4
+    },
+    {
+      "topic": "The Industrial Revolution",
+      "article": "The Industrial Revolution marked a major turning point in history, leading to significant advancements in manufacturing, transportation, and technology. It had far-reaching effects on society and the global economy.",
+      "id":"article-5",
+      "subject": "music",
+      "readTime" : "15 minutes",
+      "categoryID": 5
+    },
+    {
+      "topic": "The American Civil War",
+      "article": "The American Civil War was a defining moment in U.S. history, shaping the nation's identity and leading to the abolition of slavery. The conflict between the Union and the Confederacy had profound social and economic consequences.",
+      "id":"article-6",
+      "subject": "movie",
+      "readTime" : "15 minutes",
+      "categoryID": 6
+    },
+    {
+      "topic": "The Age of Exploration",
+      "article": "The Age of Exploration saw European powers undertaking voyages to discover new trade routes and territories. It resulted in the Columbian Exchange and the global unification of cultures.",
+      "id":"article-7",
+      "subject": "History",
+      "readTime" : "15 minutes",
+      "categoryID": 0
+    },
+    {
+      "topic": "The Bolshevik Revolution and the Rise of Communism",
+      "article": "The Bolshevik Revolution in Russia led to the overthrow of the Tsarist autocracy and the establishment of the Soviet Union. This event had a lasting impact on global geopolitics and ideology.",
+      "id":"article-8",
+      "subject": "literature",
+      "readTime" : "15 minutes",
+      "categoryID": 1
+    },
+    {
+      "topic": "The Rise of Ancient Greece",
+      "article": "The civilization of ancient Greece had a profound influence on the development of Western civilization. Its contributions to philosophy, art, and politics continue to resonate in contemporary society.",
+      "id":"article-9",
+      "subject": "philosophy",
+      "readTime" : "15 minutes",
+      "categoryID": 2
+    },
+    {
+      "topic": "The Silk Road and its Significance",
+      "article": "The Silk Road was a network of trade routes that connected the East and West, facilitating cultural exchange and economic interactions. It played a crucial role in the development of civilizations along its path.",
+      "id":"article-10",
+      "subject": "psychology",
+      "readTime" : "15 minutes",
+      "categoryID": 3
+    },
+    {
+      "topic": "The Black Death and its Impact on Europe",
+      "article": "The Black Death, one of the most devastating pandemics in human history, had far-reaching effects on medieval Europe. It led to social, economic, and religious upheavals that reshaped the continent.",
+      "id":"article-11",
+      "subject": "art",
+      "readTime" : "15 minutes",
+      "categoryID": 4
+    },
+    {
+      "topic": "The Life and Reign of Cleopatra",
+      "article": "Cleopatra, the last active ruler of the Ptolemaic Kingdom of Egypt, was known for her relationships with Julius Caesar and Mark Antony. Her reign was characterized by political intrigue and alliances.",
+      "id":"article-12",
+      "subject": "music",
+      "readTime" : "15 minutes",
+      "categoryID": 5
+    },
+    {
+      "topic": "The Fall of the Roman Empire",
+      "article": "The decline of the Roman Empire was a complex process marked by economic instability, military challenges, and internal struggles for power. The fall of Rome had a profound impact on Western civilization.",
+      "id":"article-13",
+      "subject": "movie",
+      "readTime" : "15 minutes",
+      "categoryID": 6
+    }
+    
+  ]
+  

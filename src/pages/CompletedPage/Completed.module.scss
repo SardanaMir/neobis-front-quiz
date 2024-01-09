@@ -1,0 +1,57 @@
+.root{
+    width: 940px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+
+}
+.img{
+    position: absolute;
+    top: -87px;
+    left: 96px;
+}
+.subtitle{
+    font-size: 32px;
+    font-weight: 700;
+
+}
+.msg{
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 40px;
+
+}
+.result{
+    font-size: 26px;
+    color: #4AA829;
+    font-weight: 700;
+
+}
+.text{
+    width: 350px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 40px;
+    text-align: center;
+}
+.wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.btn{
+    width: 358px;
+    height: 48px;
+    padding: 8px 16px;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    background: #000;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 50px;
+    cursor: pointer;
+}

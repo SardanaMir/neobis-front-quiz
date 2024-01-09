@@ -1,0 +1,84 @@
+.root{
+    width: 940px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+
+}
+.answer{
+    width: 358px;
+    height: 35px;
+    padding-top: 10px;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    background: none;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 15px;
+}
+.wrapper{
+    width: 626px;
+    display: block;
+    margin: 0 auto;
+}
+.subtitle{
+    text-align: center;
+}
+.btn{
+    display: block;
+    margin: 0 auto;
+    width: 358px;
+    height: 48px;
+    padding: 8px 16px;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    background: #000;
+    color: white;
+    font-size: 18px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.correct{
+    width: 358px;
+    height: 35px;
+    padding-top: 10px;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    background: none;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 15px;
+
+    background: #1e9e6b;
+    border-color: #33ca9f;
+}
+.wrong{
+    width: 358px;
+    height: 35px;
+    padding-top: 10px;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    background: none;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 15px;
+
+    background: #ffebeb;
+    border-color: #ff4a4a;
+}

@@ -1,0 +1,22 @@
+.root{
+    width: 940px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.text{
+    width: 650px;
+    text-align: center;
+    margin-top: 40px;
+}
+.subtitle{
+    font-size: 32px;
+
+}

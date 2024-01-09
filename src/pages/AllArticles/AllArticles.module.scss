@@ -1,0 +1,21 @@
+.root{
+    width: 940px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-top: 40px;
+}
+.headWrapper{
+    display: flex;
+    justify-content: space-between;
+
+}
+.searchWrapper{
+    display: flex;
+    gap: 10px;
+}

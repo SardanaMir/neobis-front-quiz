@@ -1,0 +1,31 @@
+.root{
+    width: 620px;
+    height: 412px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: none;
+    // border: 1px solid #FF9494;
+    // background: #FFA0A0;
+    // box-shadow: 0px 0px 24px 8px #FFA0A0;
+    margin-top: 20px;
+}
+.title{
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+.text{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+}

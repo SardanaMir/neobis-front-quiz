@@ -1,0 +1,30 @@
+[
+    {
+        "id":"quiz-1",
+        "subject": "History",
+        "questionCount" : "10 questions",
+        "color": "#FFA9A3"
+
+    },
+    {
+        "id":"quiz-2",
+        "subject": "Literature",
+        "questionCount" : "15 questions",
+        "color": "#ADD3FF"
+    },
+    {
+        "id":"quiz-3",
+        "subject": "Philosophy",
+        "questionCount" : "10 questions",
+        "color": "#CBF89E"
+
+    },
+    {
+        "id":"quiz-4",
+        "subject": "Psycology",
+        "questionCount" : "20 questions",
+        "color": "#DAB5FF"
+
+        
+    }
+]

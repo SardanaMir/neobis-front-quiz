@@ -1,0 +1,32 @@
+.root{
+    width: 425px;
+    height: 160px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    // padding: 16px;
+    padding-top: 16px;
+    padding-left: 16px;
+    cursor: pointer;
+}
+.wrapper{
+    display: flex;
+}
+.title__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.title{
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+}
+.topic{
+    font-size: 14px;
+    font-weight: 800;
+
+}
+a{
+    color: black;
+    text-decoration: none;
+}
