@@ -6,8 +6,8 @@ import AllArticleBlock from '../../components/AllArticlesBlock'
 import GoBack from '../../components/GoBack'
 import { useDispatch, useSelector } from 'react-redux'
 import {setArticles} from '../../redux/slices/articlesSlice'
-import {setCurrentPage} from '../../redux/slices/paginationSlice'
-import {articleGet, filter} from '../../api'
+import { setTotalPages} from '../../redux/slices/paginationSlice'
+import {articleGet} from '../../api'
 import Pagination from '../../components/Pagination';
 import styles from './AllArticles.module.scss'
 import { setSearchResults } from '../../redux/slices/searchSlice';
@@ -15,7 +15,6 @@ import { setSearchResults } from '../../redux/slices/searchSlice';
 
 const AllArticles = () => {
   const [categoryId, setCategoryId] = useState();
-  const currentPage = useSelector((state) => state.pagination.currentPage);
   const dispatch = useDispatch();
   
   const searchTerm = useSelector(state => state.search.searchTerm); 
@@ -23,26 +22,28 @@ const AllArticles = () => {
   const articles = useSelector(state => state.articles.articles)
   const filteredArticles = useSelector(state => state.filter.filteredArticles)
   const selectedCategories =  useSelector(state => state.filter.categories)
+  
+  const currentPage = useSelector(state => state.pagination.currentPage)
 
-  console.log('категории', !!selectedCategories[0])
-  console.log('search', !searchTerm)
-  console.log('filte', filteredArticles)
+  const itemsPerPage = 4;
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = articles.slice(indexOfFirstItem, indexOfLastItem);
 
   const onClickCategory = (id) =>{
-    console.log('id', id)
     setCategoryId(id)
   }
 
   const handleSearch = () =>{
     dispatch(setSearchResults(searchTerm));
-    console.log('результат', searchResults)
   }
 
   useEffect(()=>{
     const getArticles = async () =>{
-      const res = await articleGet()
+      const res = await articleGet();
       dispatch(setArticles(res))
       dispatch(setSearchResults(res))
+      dispatch(setTotalPages(res.length))
     }
     getArticles()
   }, [dispatch])
@@ -67,7 +68,7 @@ const AllArticles = () => {
             <AllArticleBlock key={index} {...article} />    
           ))
         ) : (
-          articles.map((article, index) => (
+          currentItems.map((article, index) => (
             <AllArticleBlock key={index} {...article} />    
           ))
         )

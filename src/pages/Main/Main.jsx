@@ -1,7 +1,6 @@
 import React, { useState,useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import ReactPaginate from 'react-paginate';
 import Header from '../../components/Header'
 import Subheader from '../../components/Subheader'
 import ArcticleBlock from '../../components/ArticleBlock'

@@ -4,14 +4,15 @@ const paginationSlice = createSlice({
   name: 'pagination',
   initialState: {
     currentPage: 1,
-    totalPages: 1,
+    totalPages: null,
+    itemsPerPage: 4
   },
   reducers: {
     setCurrentPage(state, action) {
       state.currentPage = action.payload;
     },
     setTotalPages(state, action) {
-      state.totalPages = action.payload;
+      state.totalPages = Math.ceil(action.payload / state.itemsPerPage);
     },
   },
 });

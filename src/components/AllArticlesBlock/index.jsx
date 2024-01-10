@@ -18,7 +18,7 @@ const AllArticleBlock = ({topic, id, subject, readTime}) => {
     }
 
   return (
-    <Link to={{ pathname: `/Статьи/${id}`}}>
+    <Link to={{ pathname: `/${id}`}}>
         <div className={styles.root} style={{backgroundColor: color}} key={id}>
             <div className={styles.wrapper}>
                 <div className={styles.title__wrapper}>

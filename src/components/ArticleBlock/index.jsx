@@ -5,7 +5,6 @@ import styles from './ArticleBlock.module.scss'
 
 const ArcticleBlock = ({article}) => {
     const colors = ['#FFE0A3', '#CCFFF6', '#FFCCFD', '#ADD3FF'];
-    // const backgroundColor = '#FFE0A3';
     const [color, setColor] = useState('');
 
     useEffect(() => {
@@ -17,13 +16,14 @@ const ArcticleBlock = ({article}) => {
         const randomColor = colors[randomIndex];
         setColor(randomColor);
     }
-    // to={{ pathname: `/Статьи/${article.id}`}}
   return (
-    <div className={styles.root} style={{backgroundColor: color}} key={article.id}>
-      <p className={styles.title}>{article.topic}</p>
-      <p className={styles.topic}>#{article.subject}</p>
-      <img className={styles.img} src={img} alt="" />
-    </div>
+    <Link to={{ pathname: `/${article.id}`}}>
+      <div className={styles.root} style={{backgroundColor: color}} key={article.id}>
+        <p className={styles.title}>{article.topic}</p>
+        <p className={styles.topic}>#{article.subject}</p>
+        <img className={styles.img} src={img} alt="article.topic" />
+      </div>
+    </Link>
   )
 }
 
