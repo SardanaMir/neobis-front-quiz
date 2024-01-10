@@ -18,7 +18,8 @@ function App() {
         <Route path="/:id" element={<ArticlePage/>}/>
         <Route path="/Квизы" element={<AllQuizes/>}/>
         <Route path="/quiz/:id" element={<QuizWelcomPage/>}/>
-        <Route path="/quiz" element={<QuizPage/>}/>
+        
+        <Route path="/quizgame/:id" element={<QuizPage/>}/>
         <Route path="/completed" element={<CompletedPage/>}/>
       </Routes>
     </Router>

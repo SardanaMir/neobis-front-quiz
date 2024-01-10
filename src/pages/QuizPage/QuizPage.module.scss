@@ -78,7 +78,16 @@
     margin: 0 auto;
     text-align: center;
     margin-top: 15px;
-
     background: #ffebeb;
     border-color: #ff4a4a;
+}
+.bar{
+    display: inline-flex;
+    height: 12px;
+    // padding-right: 582px;
+    align-items: center;
+    border-radius: 13px;
+    border: 1px solid #000;
+    background: #FFF;
+    width: 100%;
 }

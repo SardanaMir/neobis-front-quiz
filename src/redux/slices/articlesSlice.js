@@ -10,7 +10,6 @@ export const articlesSlice = createSlice({
   reducers: {
     setArticles(state, action){
       state.articles = action.payload;
-      console.log('action', action.payload)
     }
   },
 })

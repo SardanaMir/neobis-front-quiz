@@ -6,7 +6,7 @@ const QuizBlock = ({quiz}) => {
     const backgroundColor = quiz.color;
   return (
     <div className={styles.root} style={{backgroundColor}} key={quiz.id}>
-        <img className={styles.img} src={Cleopatra} alt="" />
+        <img className={styles.img} src={Cleopatra} alt={quiz.subject} />
         <p className={styles.title}>{quiz.subject}</p>
         <p className={styles.text}>{quiz.questionCount}</p>
     </div>

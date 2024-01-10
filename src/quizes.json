@@ -3,8 +3,19 @@
         "id":"quiz-1",
         "subject": "History",
         "questionCount" : "10 questions",
-        "color": "#FFA9A3"
-
+        "color": "#FFA9A3",
+        "questions": [
+            {
+            "question": "What year was the United States Declaration of Independence signed?",
+            "options": ["1776", "1789", "1804", "1754"],
+            "correctAnswer": "1776"
+            },
+            {
+            "question": "Which planet is known as the Red Planet?",
+            "options": ["Earth", "Mars", "Venus", "Jupiter"],
+            "correctAnswer": "Mars"
+            }     
+        ]
     },
     {
         "id":"quiz-2",

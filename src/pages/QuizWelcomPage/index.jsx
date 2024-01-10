@@ -1,15 +1,21 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Cleopatra from '../../assets/img/cleopatra.png'
-import styles from './QuizWelcomePage.module.scss'
 import Header from '../../components/Header'
 import GoBack from '../../components/GoBack'
-import StartButton from '../../components/StartButton'
 import quizes from '../../quizes.json'
-import { useParams } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux';
+import {isUserPlay} from '../../redux/slices/quizSlice'
+import styles from './QuizWelcomePage.module.scss'
 
 const QuizWelcomePage = () => {
-  const {id} = useParams()
+  const id = useSelector(state => state.quiz.id)
   const quiz = quizes.find(quiz => quiz.id === id)
+  const dispatch = useDispatch()
+  const handleStart = () =>{
+    dispatch(isUserPlay(true))
+  }
+  
   return (
     <div className={styles.root}>
         <Header/>
@@ -22,7 +28,9 @@ const QuizWelcomePage = () => {
             Это увлекательное путешествие через века и эпохи, которые сформировали наш мир таким, каким мы его знаем сегодня. В этом квизе вы окунетесь в важнейшие события, великих личностей и ключевые моменты, которые оказали огромное влияние
             на развитие человечества.
             </p>
-            <StartButton/>
+            <Link to={{pathname: `/quizgame/${id}`}}>
+              <button className={styles.btn} onClick={handleStart}>Начать квиз</button>
+            </Link>
         </div>
     </div>
 
