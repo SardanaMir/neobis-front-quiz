@@ -12,10 +12,11 @@ const QuizWelcomePage = () => {
   const id = useSelector(state => state.quiz.id)
   const quiz = quizes.find(quiz => quiz.id === id)
   const dispatch = useDispatch()
+  
   const handleStart = () =>{
     dispatch(isUserPlay(true))
   }
-  
+
   return (
     <div className={styles.root}>
         <Header/>

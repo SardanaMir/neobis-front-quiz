@@ -20,9 +20,6 @@ const quizSlice = createSlice({
     isUserPlay(state, action){
       state.isUserPlay = action.payload
     },
-    setScore(state, action){
-      state.score = state.score + action.payload
-    }
   },
 });
 

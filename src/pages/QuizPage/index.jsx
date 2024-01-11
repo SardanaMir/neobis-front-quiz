@@ -1,42 +1,29 @@
 import React, { useEffect, useState } from 'react'
 import Header from '../../components/Header'
-import {setScore} from '../../redux/slices/quizSlice'
 import questions from '../../questions.json'
+import CompletedPage from '../../pages/CompletedPage'
 import styles from './QuizPage.module.scss'
-import { useDispatch, useSelector } from 'react-redux'
 
 const QuizPage = () => {
     let [index, setIndex] = useState(0);
-    // let [score, setScore] = useState(0)
     let [question, setQuestion] = useState(questions[index]);
+    const [score, setScore] = useState(0);
     const [answers, setAnswers] = useState(Array(questions.length).fill(null));
     const [isCompleted, setIsCompleted] = useState(false)
-    const dispatch = useDispatch()
-    const score = useSelector(state => state.quiz.score)
-    const [answerStatus, setAnswerStatus] = useState()
 
     const handleAnswers = (option) => {
         const newAnswers = [...answers];
         newAnswers[index] = option;
         setAnswers(newAnswers);
-        console.log(answers)
-    };
-
+    }
+    
     const checkAnswer = (index) => {
-        console.log(index)
         if (answers[index] === questions[index].correctAnswer){
-            dispatch(setScore(1))
             return true;
         }else{
-            console.log('некорректно', answerStatus)
             return false;
         }
     };
-
-    const countScore = () => {
-        score++
-        console.log(score)
-    }
 
     const nextQuestion = () =>{
         if (index + 1 === questions.length){
@@ -47,19 +34,22 @@ const QuizPage = () => {
         }
     }
 
-    // useEffect(() => {
-    //     if (isCompleted) {
-      
-    //     }
-    // }, [isCompleted]);
+    useEffect(() => {
+        if (answers[index] !== null) {
+            if (index === 0) {
+                setScore(0);
+            }
+            if (checkAnswer(index)) {
+                setScore(prevScore => prevScore + 1);
+            }
+        }
+    }, [answers, index]);
 
   return (
     <>
         {
         isCompleted ? (
-            <div>
-            <p>Поздравляем! Вы ответили на все вопросы. Ваш итоговый счет: {score} из {questions.length}</p>
-            </div>
+            <CompletedPage score={score} questionsCount={questions.length}/>
         ):(
             <div className={styles.root}>
             <Header/>
@@ -80,8 +70,8 @@ const QuizPage = () => {
                         className={
                             (answers[index] === option && checkAnswer(index)) ? styles.correct
                             : (answers[index] === option && !checkAnswer(index)) ? styles.wrong
-                            : styles.answer} key={`id-i1${i}`}>
-                                {option}
+                            : styles.answer} key={i}>
+                            {option}
                         </div>
                     ))
                 }
@@ -92,9 +82,6 @@ const QuizPage = () => {
         )
     }
     </>
-
-
-
   )
 }
 
